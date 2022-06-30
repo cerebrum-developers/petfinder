@@ -103,7 +103,11 @@ module.exports = (app, wagner) => {
           let request = req.body
           delete request.animal_id;
           let animalUpdateData = await wagner.get("animal_manager").update(request, conds);
-          res.status(HTTPStatus.OK).json({ success: '1', message: "Data.", data:"Data deleted successfully." });            
+          if(req.body.is_deleted == 1){
+            res.status(HTTPStatus.OK).json({ success: '1', message: "Data.", data:"Data deleted successfully." });            
+          }else{
+            res.status(HTTPStatus.OK).json({ success: '1', message: "Data.", data:"Data activated successfully." });            
+          }            
 
         }else{
           res.status(400).json({ success: "0", message: "data not found", data:  ""});
