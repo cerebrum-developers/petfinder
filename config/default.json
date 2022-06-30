@@ -1,0 +1,21 @@
+{
+    "APP_URL": "http://localhost:3002/",
+    "FRONTEND_URL": "",
+    "APP_NAME" : "petfinder",
+    "mongo_password" : "",
+    "PORT": 3002,
+    "key":"WinterIsComing",
+    "mongoURI": "mongodb+srv://seasia:o1qDNReX8ZZuAR9n@cluster0.xczqa.mongodb.net/test",
+    "dbName": "petFinder",
+    "JWT"   :{
+        "SECRET":"6dcc80c4cc5b3daa1483ae96fb449235",
+        "TOKENTIME":"365 days"
+    },
+    "email":{
+        "MAIL_HOST"         : "gmail",
+        "MAIL_PORT"         : 25,
+        "MAIL_USERNAME"     : "",
+        "MAIL_PASSWORD"     : "", 
+        "FROM_EMAIL"        : ""
+    }
+}
